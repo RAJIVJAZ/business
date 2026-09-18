@@ -66,6 +66,10 @@ Business API, and AI chatbot integration plan for Phase 2.
 
 ## Documentation
 
+- [`docs/business-strategy.md`](docs/business-strategy.md) — competitive analysis, SWOT, positioning,
+  revenue streams, service packaging, CAC/LTV, referral ecosystem.
+- [`docs/brand-strategy.md`](docs/brand-strategy.md) — brand story/mission/vision/values, voice,
+  messaging framework, brand personality blend, customer emotion mapping.
 - [`docs/architecture.md`](docs/architecture.md) — technical architecture (current + Phase 2 client
   portal/CRM/API), security architecture, future scaling roadmap.
 - [`docs/database-schema.md`](docs/database-schema.md) — proposed Phase 2 database schema for the
