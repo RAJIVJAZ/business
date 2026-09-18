@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Poppins, Inter } from "next/font/google";
+import { Poppins, Inter, Manrope } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import { Header } from "@/components/layout/header";
@@ -19,6 +19,15 @@ const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
+  display: "swap",
+});
+
+// Logo/wordmark only — see the brand system's typography rationale for why the
+// mark uses a distinct display face from the site's Poppins/Inter type system.
+const manrope = Manrope({
+  variable: "--font-manrope",
+  subsets: ["latin"],
+  weight: ["700", "800"],
   display: "swap",
 });
 
@@ -53,9 +62,6 @@ export const metadata: Metadata = {
     title: `${site.name} | ${site.tagline}`,
     description: site.description,
   },
-  icons: {
-    icon: "/favicon.ico",
-  },
   alternates: {
     canonical: "/",
   },
@@ -68,7 +74,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     name: site.name,
     alternateName: site.legalName,
     url: site.url,
-    logo: `${site.url}/favicon.ico`,
+    logo: `${site.url}/icon`,
     description: site.description,
     address: {
       "@type": "PostalAddress",
@@ -94,7 +100,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${poppins.variable} ${inter.variable} h-full antialiased scroll-smooth`}
+      className={`${poppins.variable} ${inter.variable} ${manrope.variable} h-full antialiased scroll-smooth`}
     >
       <body className="flex min-h-full flex-col bg-bg text-navy">
         <script

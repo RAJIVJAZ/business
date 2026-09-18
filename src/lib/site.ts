@@ -9,8 +9,9 @@ export const site = {
     "India's complete business growth and compliance partner — business registration, GST & taxation, licenses, MSME subsidies, loan facilitation, project reports, hospital and industrial consultancy under one roof.",
   url: "https://www.anuradhabusinesssolutions.com",
   domain: "anuradhabusinesssolutions.com",
-  logoText: "Anuradha",
-  logoSuffix: "Business Solutions",
+  // Wordmark text used in the logo lock-up only (always lower case + accent dot) —
+  // kept separate from `name`, which is used in prose/metadata.
+  logoWord: "anuradha",
   founded: "2016",
   phone: "+91 95809 15299",
   phoneHref: "tel:+919580915299",

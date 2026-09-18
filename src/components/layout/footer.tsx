@@ -1,16 +1,14 @@
 import Link from "next/link";
 import { footerNav, site } from "@/lib/site";
 import { NewsletterForm } from "@/components/ui/newsletter-form";
+import { Logo } from "@/components/ui/logo";
 
 export function Footer() {
   return (
     <footer className="bg-navy text-white/70">
       <div className="container-site grid grid-cols-1 gap-10 py-14 sm:grid-cols-2 lg:grid-cols-5">
         <div className="lg:col-span-2">
-          <div className="text-2xl font-bold text-white">
-            {site.logoText}
-            <span className="text-blue-light">{site.logoSuffix}</span>
-          </div>
+          <Logo tone="white" size="lg" />
           <p className="mt-1 text-sm font-medium uppercase tracking-wider text-green">{site.tagline}</p>
           <p className="mt-4 max-w-sm text-sm leading-relaxed">{site.description}</p>
           <div className="mt-6">

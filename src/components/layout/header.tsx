@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { primaryNav, site } from "@/lib/site";
+import { Logo } from "@/components/ui/logo";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,11 +13,8 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-white/95 backdrop-blur">
       <div className="container-site flex items-center justify-between py-3">
-        <Link href="/" className="flex flex-col leading-none" onClick={() => setIsOpen(false)}>
-          <span className="text-2xl font-bold text-navy sm:text-3xl">
-            {site.logoText}
-            <span className="text-blue">{site.logoSuffix}</span>
-          </span>
+        <Link href="/" className="flex flex-col gap-1 leading-none" onClick={() => setIsOpen(false)}>
+          <Logo />
           <span className="text-[11px] font-medium uppercase tracking-wider text-green-dark sm:text-xs">
             {site.tagline}
           </span>
