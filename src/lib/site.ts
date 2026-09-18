@@ -37,12 +37,6 @@ export const site = {
     instagram: "https://www.instagram.com/anuradhabusinesssolutions",
     youtube: "https://www.youtube.com/@anuradhabusinesssolutions",
   },
-  stats: [
-    { value: "12,000+", label: "Businesses Served" },
-    { value: "Top Rated", label: "Business Solutions Provider in Prayagraj" },
-    { value: "₹840 Cr+", label: "Loans & Subsidies Facilitated" },
-    { value: "9.2 yrs", label: "Avg. Team Experience" },
-  ],
   ctaPrimary: { label: "Book Free Consultation", href: "/contact#consultation" },
   ctaSecondary: { label: "Request Callback", href: "/contact#callback" },
 } as const;

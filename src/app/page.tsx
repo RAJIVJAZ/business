@@ -2,7 +2,6 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { ButtonLink } from "@/components/ui/button-link";
 import { SectionHeading } from "@/components/ui/section-heading";
-import { AnimatedStat } from "@/components/ui/animated-stat";
 import { TrustBar } from "@/components/ui/trust-bar";
 import { ServiceCard } from "@/components/ui/service-card";
 import { IndustryCard } from "@/components/ui/industry-card";
@@ -54,11 +53,6 @@ export default function HomePage() {
               <div className="mt-8 flex flex-wrap gap-4">
                 <ButtonLink href={site.ctaPrimary.href} size="lg">{site.ctaPrimary.label}</ButtonLink>
                 <ButtonLink href={site.ctaSecondary.href} variant="outline" size="lg">{site.ctaSecondary.label}</ButtonLink>
-              </div>
-              <div className="mt-12 grid grid-cols-2 gap-6 sm:grid-cols-4">
-                {site.stats.map((stat) => (
-                  <AnimatedStat key={stat.label} value={stat.value} label={stat.label} />
-                ))}
               </div>
             </Reveal>
             <Reveal className="lg:col-span-5" delay={0.15} y={16}>

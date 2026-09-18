@@ -2,9 +2,7 @@ import type { Metadata } from "next";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { CtaSection } from "@/components/ui/cta-section";
-import { AnimatedStat } from "@/components/ui/animated-stat";
 import { Reveal } from "@/components/ui/reveal";
-import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Why Choose Us",
@@ -66,17 +64,6 @@ export default function WhyChooseUsPage() {
               <p className="mt-2 text-sm text-slate-600">{reason.desc}</p>
             </Reveal>
           ))}
-        </div>
-      </section>
-
-      <section className="bg-white py-16 sm:py-24">
-        <div className="container-site">
-          <SectionHeading eyebrow="By The Numbers" title="Results our clients can point to" align="center" />
-          <Reveal className="mt-10 grid grid-cols-2 gap-8 rounded-2xl bg-navy py-10 sm:grid-cols-4">
-            {site.stats.map((stat) => (
-              <AnimatedStat key={stat.label} value={stat.value} label={stat.label} />
-            ))}
-          </Reveal>
         </div>
       </section>
 
