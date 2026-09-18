@@ -25,8 +25,10 @@ export const site = {
     pincode: "211003",
     country: "India",
   },
+  // Query-based embed (no API key required) resolves to the actual address below;
+  // if the address changes, regenerate this from the new address string.
   mapEmbedSrc:
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.526441!2d77.0854!3d28.4949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDI5JzQxLjYiTiA3N8KwMDUnMDcuNCJF!5e0!3m2!1sen!2sin!4v1700000000000",
+    "https://www.google.com/maps?q=594A%2F371A%2C%20Mutthiganj%2C%20Salikgram%2C%20Jaiswal%20Nagar%2C%20Prayagraj%2C%20Uttar%20Pradesh%20211003%2C%20India&output=embed",
   social: {
     linkedin: "https://www.linkedin.com/company/anuradhabusinesssolutions",
     twitter: "https://twitter.com/anuradhabizsol",
