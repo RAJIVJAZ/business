@@ -2,7 +2,7 @@ export type Faq = { question: string; answer: string };
 
 export const generalFaqs: Faq[] = [
   {
-    question: "What services does BusinessMitra India provide?",
+    question: "What services does Anuradha Business Solutions provide?",
     answer:
       "We provide end-to-end business consultancy across legal registration, GST & taxation, licenses and government approvals, MSME subsidies, bank loan facilitation, project reports, hospital and industrial consultancy, tender consultancy, trademark & IP, compliance management, and virtual legal officer services.",
   },

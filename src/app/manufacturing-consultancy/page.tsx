@@ -82,7 +82,7 @@ export default function ManufacturingConsultancyPage() {
               id="consultation"
               title="Manufacturing Consultancy Enquiry"
               description="Tell us about your unit and we'll respond within 24 hours."
-              whatsappIntro="Hi BusinessMitra, I'd like a consultation for Manufacturing Consultancy."
+              whatsappIntro="Hi Anuradha Business Solutions, I'd like a consultation for Manufacturing Consultancy."
               fields={[
                 { name: "name", label: "Full Name", required: true },
                 { name: "phone", label: "Phone Number", type: "tel", required: true },

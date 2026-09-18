@@ -7,7 +7,7 @@
 - **Alternative if a client portal/backend (Phase 2) is added**: a VPS or cloud VM running Node.js
   behind Nginx, or a managed platform like Railway/Render, so the API routes and Postgres connection
   aren't constrained by a purely static/edge deployment model.
-- **Domain**: register `businessmitraindia.com` (primary) and defensively register `.in` and common
+- **Domain**: register `anuradhabusinesssolutions.com` (primary) and defensively register `.in` and common
   misspellings; point DNS through Cloudflare (see below) regardless of where the app is hosted, for
   CDN caching, DDoS protection and easy SSL management.
 
@@ -22,7 +22,7 @@
 4. Add environment variables (none required for Phase 1; add CRM/WhatsApp/Claude API keys here once
    Phase 2 ships).
 5. Deploy. Vercel issues a `*.vercel.app` preview URL immediately.
-6. **Custom domain**: Project → Settings → Domains → add `businessmitraindia.com` and `www`. Vercel
+6. **Custom domain**: Project → Settings → Domains → add `anuradhabusinesssolutions.com` and `www`. Vercel
    provides the exact `A`/`CNAME` records to add at your DNS provider (or Cloudflare, see below).
 
 ## 2. VPS Hosting (Ubuntu + Nginx + PM2)
@@ -40,17 +40,17 @@ npm install
 npm run build
 
 # Run with PM2 (keeps the app alive, restarts on crash/reboot)
-pm2 start npm --name "businessmitra" -- start
+pm2 start npm --name "anuradhabusinesssolutions" -- start
 pm2 save
 pm2 startup   # follow the printed command to enable on-boot start
 ```
 
-Nginx reverse proxy (`/etc/nginx/sites-available/businessmitra`):
+Nginx reverse proxy (`/etc/nginx/sites-available/anuradhabusinesssolutions`):
 
 ```nginx
 server {
     listen 80;
-    server_name businessmitraindia.com www.businessmitraindia.com;
+    server_name anuradhabusinesssolutions.com www.anuradhabusinesssolutions.com;
 
     location / {
         proxy_pass http://localhost:3000;
@@ -64,7 +64,7 @@ server {
 ```
 
 ```bash
-sudo ln -s /etc/nginx/sites-available/businessmitra /etc/nginx/sites-enabled/
+sudo ln -s /etc/nginx/sites-available/anuradhabusinesssolutions /etc/nginx/sites-enabled/
 sudo nginx -t && sudo systemctl reload nginx
 ```
 
@@ -118,7 +118,7 @@ either/or platform decision, not an upgrade.
 
 ```bash
 sudo apt install -y certbot python3-certbot-nginx
-sudo certbot --nginx -d businessmitraindia.com -d www.businessmitraindia.com
+sudo certbot --nginx -d anuradhabusinesssolutions.com -d www.anuradhabusinesssolutions.com
 ```
 
 Certbot auto-configures Nginx for HTTPS and sets up a renewal cron/systemd timer automatically.
@@ -126,11 +126,11 @@ Certbot auto-configures Nginx for HTTPS and sets up a renewal cron/systemd timer
 ## 7. Email Setup
 
 - Use a transactional/business email provider separate from the web host: Google Workspace or
-  Microsoft 365 for `@businessmitraindia.com` mailboxes (consultation replies, `consult@`, `support@`).
+  Microsoft 365 for `@anuradhabusinesssolutions.com` mailboxes (consultation replies, `consult@`, `support@`).
 - Add SPF, DKIM and DMARC DNS records (provided by Google Workspace/M365 setup wizard) at Cloudflare
   to ensure outbound mail from the domain isn't flagged as spam.
 - For Phase 2 transactional email (renewal alerts, application status updates), use a dedicated ESP
-  (Resend, AWS SES, or Postmark) with its own subdomain (e.g. `mail.businessmitraindia.com`) to keep
+  (Resend, AWS SES, or Postmark) with its own subdomain (e.g. `mail.anuradhabusinesssolutions.com`) to keep
   transactional sending reputation separate from human mailbox sending.
 
 ## 8. Backup Setup

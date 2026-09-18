@@ -5,7 +5,7 @@ import { site, whatsappLink } from "@/lib/site";
 export function WhatsAppButton() {
   return (
     <a
-      href={whatsappLink("Hi BusinessMitra India, I'd like to know more about your services.")}
+      href={whatsappLink("Hi Anuradha Business Solutions, I'd like to know more about your services.")}
       target="_blank"
       rel="noopener noreferrer"
       aria-label={`Chat with ${site.name} on WhatsApp`}

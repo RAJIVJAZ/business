@@ -12,7 +12,7 @@ export const testimonials: Testimonial[] = [
     role: "Founder",
     company: "Verma Foods Pvt Ltd",
     quote:
-      "BusinessMitra's team structured our PMFME subsidy application and DPR so well that our sanction came through in one committee cycle. Their follow-up through disbursement was the real difference.",
+      "Anuradha Business Solutions's team structured our PMFME subsidy application and DPR so well that our sanction came through in one committee cycle. Their follow-up through disbursement was the real difference.",
     industry: "Food Processing",
   },
   {
@@ -28,7 +28,7 @@ export const testimonials: Testimonial[] = [
     role: "Director",
     company: "Agarwal Dairy Industries",
     quote:
-      "We didn't know our expansion qualified for three different subsidy schemes until BusinessMitra mapped it out. Their DPR got us sanctioned across all three without any double-funding issues.",
+      "We didn't know our expansion qualified for three different subsidy schemes until Anuradha Business Solutions mapped it out. Their DPR got us sanctioned across all three without any double-funding issues.",
     industry: "Dairy",
   },
   {

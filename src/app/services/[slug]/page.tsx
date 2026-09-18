@@ -116,7 +116,7 @@ export default async function ServiceDetailPage({
 
           <div className="space-y-6">
             <div className="rounded-2xl border border-border bg-white p-6">
-              <h3 className="font-bold text-navy">Why Choose BusinessMitra</h3>
+              <h3 className="font-bold text-navy">Why Choose Anuradha Business Solutions</h3>
               <ul className="mt-4 space-y-3 text-sm text-slate-600">
                 {service.benefits.map((benefit) => (
                   <li key={benefit} className="flex items-start gap-2">

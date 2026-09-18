@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 };
 
 const loanFaqs = [
-  { question: "How does BusinessMitra choose which bank to approach?", answer: "We assess your financials, collateral position and industry against each lender's current credit appetite, then match you to PSU banks, private banks or NBFCs most likely to sanction quickly." },
+  { question: "How does Anuradha Business Solutions choose which bank to approach?", answer: "We assess your financials, collateral position and industry against each lender's current credit appetite, then match you to PSU banks, private banks or NBFCs most likely to sanction quickly." },
   { question: "Can I get a loan without collateral?", answer: "Yes — CGTMSE-backed loans up to the current scheme ceiling and Mudra loans up to ₹10 lakh are structured to be collateral-free for eligible MSMEs." },
   { question: "What documents do I need to start?", answer: "KYC of promoters, business registration proof, last 2-3 years' financials (or projections for new units), and collateral documents if applicable. Our loan desk shares an exact checklist after the first call." },
   { question: "How long does sanction typically take?", answer: "Straightforward MSME/Mudra loans can be sanctioned in 2-3 weeks; project finance and larger term loans typically take 4-8 weeks depending on the lender's appraisal process." },

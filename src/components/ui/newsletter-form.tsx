@@ -8,9 +8,9 @@ export function NewsletterForm() {
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    window.location.href = `mailto:consult@businessmitraindia.com?subject=${encodeURIComponent(
+    window.location.href = `mailto:consult@anuradhabusinesssolutions.com?subject=${encodeURIComponent(
       "Newsletter Subscription"
-    )}&body=${encodeURIComponent(`Please subscribe this email to the BusinessMitra newsletter: ${email}`)}`;
+    )}&body=${encodeURIComponent(`Please subscribe this email to the Anuradha Business Solutions newsletter: ${email}`)}`;
     setSubmitted(true);
   }
 

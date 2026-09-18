@@ -17,7 +17,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "India's Complete Business Growth & Compliance Partner",
   description:
-    "From registration to expansion — legal, tax, licenses, loans, subsidies and business growth solutions under one roof. Book a free consultation with BusinessMitra India.",
+    "From registration to expansion — legal, tax, licenses, loans, subsidies and business growth solutions under one roof. Book a free consultation with Anuradha Business Solutions.",
   alternates: { canonical: "/" },
 };
 

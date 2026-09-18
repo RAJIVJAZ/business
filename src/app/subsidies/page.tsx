@@ -10,7 +10,7 @@ import { generalFaqs } from "@/data/faqs";
 export const metadata: Metadata = {
   title: "MSME Subsidy Consultancy — Eligibility Checker",
   description:
-    "Check your eligibility for food processing, dairy, manufacturing, hospital and renewable energy subsidies, and MSME schemes. Get a detailed subsidy report from BusinessMitra India.",
+    "Check your eligibility for food processing, dairy, manufacturing, hospital and renewable energy subsidies, and MSME schemes. Get a detailed subsidy report from Anuradha Business Solutions.",
   alternates: { canonical: "/subsidies" },
 };
 

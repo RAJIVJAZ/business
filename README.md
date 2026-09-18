@@ -1,6 +1,6 @@
-# BusinessMitra India — Website
+# Anuradha Business Solutions — Website
 
-Marketing website for **BusinessMitra India**, a one-stop business consultancy platform covering
+Marketing website for **Anuradha Business Solutions**, a one-stop business consultancy platform covering
 legal registration, taxation, licenses, MSME subsidies, bank loan facilitation, project reports,
 hospital and industrial consultancy, tender consultancy, trademark/IP, compliance management and
 virtual legal officer services — positioned as a premium, enterprise-grade alternative to typical

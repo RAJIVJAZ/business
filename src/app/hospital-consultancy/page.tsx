@@ -10,7 +10,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Hospital & Healthcare Consultancy",
   description:
-    "Hospital setup, NABH accreditation, Ayushman Bharat empanelment, drug license, fire NOC, pollution NOC and biomedical waste compliance — coordinated end-to-end by BusinessMitra India.",
+    "Hospital setup, NABH accreditation, Ayushman Bharat empanelment, drug license, fire NOC, pollution NOC and biomedical waste compliance — coordinated end-to-end by Anuradha Business Solutions.",
   alternates: { canonical: "/hospital-consultancy" },
 };
 
@@ -84,7 +84,7 @@ export default function HospitalConsultancyPage() {
               id="consultation"
               title="Hospital Consultancy Enquiry"
               description="Tell us about your hospital project and we'll respond within 24 hours."
-              whatsappIntro="Hi BusinessMitra, I'd like a consultation for Hospital Consultancy."
+              whatsappIntro="Hi Anuradha Business Solutions, I'd like a consultation for Hospital Consultancy."
               fields={[
                 { name: "name", label: "Full Name", required: true },
                 { name: "phone", label: "Phone Number", type: "tel", required: true },

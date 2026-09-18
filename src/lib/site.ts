@@ -2,23 +2,23 @@
 // Update phone/email/address/social links here as the real business details are finalized.
 
 export const site = {
-  name: "BusinessMitra India",
-  legalName: "BusinessMitra India Consultancy Services",
+  name: "Anuradha Business Solutions",
+  legalName: "Anuradha Business Solutions Pvt. Ltd.",
   tagline: "Start. Comply. Grow.",
   description:
     "India's complete business growth and compliance partner — business registration, GST & taxation, licenses, MSME subsidies, loan facilitation, project reports, hospital and industrial consultancy under one roof.",
-  url: "https://www.businessmitraindia.com",
-  domain: "businessmitraindia.com",
-  logoText: "BusinessMitra",
-  logoSuffix: "India",
+  url: "https://www.anuradhabusinesssolutions.com",
+  domain: "anuradhabusinesssolutions.com",
+  logoText: "Anuradha",
+  logoSuffix: "Business Solutions",
   founded: "2016",
   phone: "+91 98765 43210",
   phoneHref: "tel:+919876543210",
   whatsappNumber: "919876543210",
-  email: "consult@businessmitraindia.com",
-  supportEmail: "support@businessmitraindia.com",
+  email: "consult@anuradhabusinesssolutions.com",
+  supportEmail: "support@anuradhabusinesssolutions.com",
   address: {
-    line1: "9th Floor, Mitra Corporate Towers",
+    line1: "9th Floor, Anuradha Corporate Towers",
     line2: "Cyber City, Sector 24",
     city: "Gurugram",
     state: "Haryana",
@@ -28,11 +28,11 @@ export const site = {
   mapEmbedSrc:
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.526441!2d77.0854!3d28.4949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDI5JzQxLjYiTiA3N8KwMDUnMDcuNCJF!5e0!3m2!1sen!2sin!4v1700000000000",
   social: {
-    linkedin: "https://www.linkedin.com/company/businessmitraindia",
-    twitter: "https://twitter.com/businessmitrain",
-    facebook: "https://www.facebook.com/businessmitraindia",
-    instagram: "https://www.instagram.com/businessmitraindia",
-    youtube: "https://www.youtube.com/@businessmitraindia",
+    linkedin: "https://www.linkedin.com/company/anuradhabusinesssolutions",
+    twitter: "https://twitter.com/anuradhabizsol",
+    facebook: "https://www.facebook.com/anuradhabusinesssolutions",
+    instagram: "https://www.instagram.com/anuradhabusinesssolutions",
+    youtube: "https://www.youtube.com/@anuradhabusinesssolutions",
   },
   stats: [
     { value: "12,000+", label: "Businesses Served" },

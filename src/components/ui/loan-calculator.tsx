@@ -49,7 +49,7 @@ export function LoanCalculator() {
     event.preventDefault();
     if (!lead.name || !lead.phone) return;
     const message = [
-      "Hi BusinessMitra, I used the Loan Eligibility Calculator.",
+      "Hi Anuradha Business Solutions, I used the Loan Eligibility Calculator.",
       "",
       `Name: ${lead.name}`,
       `Phone: ${lead.phone}`,

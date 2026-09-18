@@ -31,7 +31,7 @@ export function SubsidyChecker() {
     event.preventDefault();
     if (!lead.name || !lead.phone) return;
     const message = [
-      "Hi BusinessMitra, I used the Subsidy Eligibility Checker.",
+      "Hi Anuradha Business Solutions, I used the Subsidy Eligibility Checker.",
       "",
       `Name: ${lead.name}`,
       `Phone: ${lead.phone}`,

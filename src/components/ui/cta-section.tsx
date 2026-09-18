@@ -3,7 +3,7 @@ import { site } from "@/lib/site";
 
 export function CtaSection({
   title = "Ready to start, comply, and grow?",
-  description = "Book a free consultation with a BusinessMitra relationship manager and get a scoped plan within 24 hours.",
+  description = "Book a free consultation with a Anuradha Business Solutions relationship manager and get a scoped plan within 24 hours.",
 }: {
   title?: string;
   description?: string;

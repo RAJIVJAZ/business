@@ -7,7 +7,7 @@ import { blogPosts, blogCategories } from "@/data/blog";
 export const metadata: Metadata = {
   title: "Blog & Resources",
   description:
-    "GST, income tax, business registration, subsidies, government schemes, loans, compliance, hospital and manufacturing insights from the BusinessMitra India advisory desk.",
+    "GST, income tax, business registration, subsidies, government schemes, loans, compliance, hospital and manufacturing insights from the Anuradha Business Solutions advisory desk.",
   alternates: { canonical: "/blog" },
 };
 

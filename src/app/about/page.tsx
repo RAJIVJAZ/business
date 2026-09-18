@@ -7,7 +7,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "BusinessMitra India's mission, vision, values and leadership — a one-stop business consultancy platform built to make compliance and growth simple for Indian businesses.",
+    "Anuradha Business Solutions's mission, vision, values and leadership — a one-stop business consultancy platform built to make compliance and growth simple for Indian businesses.",
   alternates: { canonical: "/about" },
 };
 
@@ -32,9 +32,9 @@ export default function AboutPage() {
         <div className="container-site">
           <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "About Us" }]} />
           <SectionHeading
-            eyebrow="About BusinessMitra India"
+            eyebrow="About Anuradha Business Solutions"
             title="Built to be the one call a growing business needs to make"
-            description={`Founded in ${site.founded}, BusinessMitra India was started to remove the friction Indian entrepreneurs face juggling separate CAs, lawyers, licensing agents and loan brokers.`}
+            description={`Founded in ${site.founded}, Anuradha Business Solutions was started to remove the friction Indian entrepreneurs face juggling separate CAs, lawyers, licensing agents and loan brokers.`}
             light
           />
         </div>
@@ -83,7 +83,7 @@ export default function AboutPage() {
 
       <section className="py-16 sm:py-24">
         <div className="container-site">
-          <SectionHeading eyebrow="Leadership Team" title="The people behind BusinessMitra India" />
+          <SectionHeading eyebrow="Leadership Team" title="The people behind Anuradha Business Solutions" />
           <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {leadership.map((person) => (
               <div key={person.name} className="rounded-2xl border border-border bg-white p-6 text-center">

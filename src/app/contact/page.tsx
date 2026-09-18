@@ -7,7 +7,7 @@ import { site, whatsappLink } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Book a free consultation, request a callback, or reach BusinessMitra India via phone, email or WhatsApp. Offices coordinating clients across 28 states.",
+    "Book a free consultation, request a callback, or reach Anuradha Business Solutions via phone, email or WhatsApp. Offices coordinating clients across 28 states.",
   alternates: { canonical: "/contact" },
 };
 
@@ -36,7 +36,7 @@ export default function ContactPage() {
           <div className="rounded-2xl border border-border bg-white p-6 text-center">
             <h3 className="font-bold text-navy">WhatsApp</h3>
             <a
-              href={whatsappLink("Hi BusinessMitra India, I'd like to know more about your services.")}
+              href={whatsappLink("Hi Anuradha Business Solutions, I'd like to know more about your services.")}
               target="_blank"
               rel="noopener noreferrer"
               className="mt-2 block text-lg font-semibold text-green-dark"
@@ -57,7 +57,7 @@ export default function ContactPage() {
             id="consultation"
             title="Book Free Consultation"
             description="Tell us what you're working on — registration, licensing, subsidies, loans or ongoing compliance."
-            whatsappIntro="Hi BusinessMitra, I'd like to book a free consultation."
+            whatsappIntro="Hi Anuradha Business Solutions, I'd like to book a free consultation."
             fields={[
               { name: "name", label: "Full Name", required: true },
               { name: "phone", label: "Phone Number", type: "tel", required: true },
@@ -81,7 +81,7 @@ export default function ContactPage() {
             id="callback"
             title="Request a Callback"
             description="Prefer a call? Leave your number and a relationship manager will call you back."
-            whatsappIntro="Hi BusinessMitra, please call me back."
+            whatsappIntro="Hi Anuradha Business Solutions, please call me back."
             submitLabel="Request Callback"
             fields={[
               { name: "name", label: "Full Name", required: true },
@@ -112,7 +112,7 @@ export default function ContactPage() {
             </div>
             <div className="overflow-hidden rounded-2xl border border-border">
               <iframe
-                title="BusinessMitra India office location"
+                title="Anuradha Business Solutions office location"
                 src={site.mapEmbedSrc}
                 width="100%"
                 height="260"

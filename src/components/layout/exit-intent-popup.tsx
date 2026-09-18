@@ -44,7 +44,7 @@ export function ExitIntentPopup() {
     event.preventDefault();
     if (!phone) return;
     window.open(
-      whatsappLink(`Hi BusinessMitra, please call me back. My number is ${phone}.`),
+      whatsappLink(`Hi Anuradha Business Solutions, please call me back. My number is ${phone}.`),
       "_blank",
       "noopener,noreferrer"
     );
@@ -78,7 +78,7 @@ export function ExitIntentPopup() {
             </span>
             <h3 className="mt-3 text-xl font-bold text-navy">Get a free 15-minute consultation call</h3>
             <p className="mt-2 text-sm text-slate-600">
-              Leave your number and a BusinessMitra relationship manager will call you back — no obligation.
+              Leave your number and a Anuradha Business Solutions relationship manager will call you back — no obligation.
             </p>
             <form onSubmit={handleSubmit} className="mt-5 flex flex-col gap-3 sm:flex-row">
               <input

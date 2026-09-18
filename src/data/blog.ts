@@ -32,7 +32,7 @@ export const blogPosts: BlogPost[] = [
     category: "GST",
     excerpt: "A practical month-by-month checklist to keep your GSTR filings error-free and penalty-free through the year.",
     date: "2026-01-12",
-    author: "BusinessMitra Tax Desk",
+    author: "Anuradha Business Solutions Tax Desk",
     readTime: "6 min read",
     content: [
       "Late fees, blocked input tax credit and cancelled registrations are almost always avoidable with a structured filing calendar. This checklist covers the recurring pitfalls we see across our MSME client base.",
@@ -49,7 +49,7 @@ export const blogPosts: BlogPost[] = [
     category: "Income Tax",
     excerpt: "Practical, compliant tax-planning levers available to proprietors, partners and company promoters.",
     date: "2026-01-20",
-    author: "BusinessMitra Tax Desk",
+    author: "Anuradha Business Solutions Tax Desk",
     readTime: "5 min read",
     content: [
       "Most business owners over-focus on Section 80C while ignoring larger, legitimate planning opportunities available to promoters and partners.",
@@ -65,7 +65,7 @@ export const blogPosts: BlogPost[] = [
     category: "Business Registration",
     excerpt: "A founder's comparison of compliance cost, funding readiness and liability protection across structures.",
     date: "2026-02-02",
-    author: "BusinessMitra Registration Desk",
+    author: "Anuradha Business Solutions Registration Desk",
     readTime: "7 min read",
     content: [
       "The right legal structure depends less on 'which is cheaper' and more on your 3-year funding and ownership plan.",
@@ -81,7 +81,7 @@ export const blogPosts: BlogPost[] = [
     category: "Subsidies",
     excerpt: "How the PMFME credit-linked capital subsidy works, and how to structure your DPR for approval.",
     date: "2026-02-10",
-    author: "BusinessMitra Subsidy Desk",
+    author: "Anuradha Business Solutions Subsidy Desk",
     readTime: "8 min read",
     content: [
       "The Pradhan Mantri Formalisation of Micro Food Processing Enterprises (PMFME) scheme offers a credit-linked capital subsidy for eligible micro food processing units — but approval hinges on DPR quality.",
@@ -97,7 +97,7 @@ export const blogPosts: BlogPost[] = [
     category: "Government Schemes",
     excerpt: "Udyam registration is free — but the scheme access it unlocks is where the real value lies.",
     date: "2026-02-18",
-    author: "BusinessMitra Advisory Desk",
+    author: "Anuradha Business Solutions Advisory Desk",
     readTime: "5 min read",
     content: [
       "Udyam registration itself takes minutes online, but many registered MSMEs never claim the benefits it unlocks — from tender EMD exemption to delayed payment protection under the MSME Development Act.",
@@ -113,7 +113,7 @@ export const blogPosts: BlogPost[] = [
     category: "Loans",
     excerpt: "Understanding the Credit Guarantee Fund Trust mechanism and how to structure your application around it.",
     date: "2026-02-25",
-    author: "BusinessMitra Loan Desk",
+    author: "Anuradha Business Solutions Loan Desk",
     readTime: "6 min read",
     content: [
       "CGTMSE doesn't lend money directly — it guarantees a portion of the bank's exposure, which is why understanding the mechanism helps you package a stronger application.",
@@ -129,7 +129,7 @@ export const blogPosts: BlogPost[] = [
     category: "Compliance",
     excerpt: "Missed ROC filings compound into penalties and director disqualification — here's the calendar to avoid it.",
     date: "2026-03-04",
-    author: "BusinessMitra Compliance Desk",
+    author: "Anuradha Business Solutions Compliance Desk",
     readTime: "6 min read",
     content: [
       "Private Limited companies face a recurring set of ROC filings each financial year — missing them compounds daily penalties with no upper cap under current rules.",
@@ -145,7 +145,7 @@ export const blogPosts: BlogPost[] = [
     category: "Hospitals",
     excerpt: "What hospitals should have in place before applying for NABH pre-assessment.",
     date: "2026-03-12",
-    author: "BusinessMitra Healthcare Desk",
+    author: "Anuradha Business Solutions Healthcare Desk",
     readTime: "7 min read",
     content: [
       "NABH accreditation evaluates hospitals against defined patient safety and quality management standards — most first-time applicants underestimate the documentation burden involved.",
@@ -161,7 +161,7 @@ export const blogPosts: BlogPost[] = [
     category: "Manufacturing",
     excerpt: "Why the order in which you apply for clearances can save (or cost) months of project delay.",
     date: "2026-03-20",
-    author: "BusinessMitra Industrial Desk",
+    author: "Anuradha Business Solutions Industrial Desk",
     readTime: "6 min read",
     content: [
       "Manufacturers frequently apply for factory licenses and environmental clearances in parallel without realizing certain approvals are legally sequential prerequisites for others.",

@@ -8,7 +8,7 @@ import { industries } from "@/data/industries";
 export const metadata: Metadata = {
   title: "Industries We Serve",
   description:
-    "BusinessMitra India serves manufacturers, dairy plants, food processors, hospitals, hotels, warehousing businesses, educational institutions and retail businesses across India.",
+    "Anuradha Business Solutions serves manufacturers, dairy plants, food processors, hospitals, hotels, warehousing businesses, educational institutions and retail businesses across India.",
   alternates: { canonical: "/industries" },
 };
 

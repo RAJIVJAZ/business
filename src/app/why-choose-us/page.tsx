@@ -7,7 +7,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Why Choose Us",
   description:
-    "One-stop solution, expert team, pan-India reach, technology-enabled delivery, transparent pricing and a dedicated relationship manager — why businesses choose BusinessMitra India.",
+    "One-stop solution, expert team, pan-India reach, technology-enabled delivery, transparent pricing and a dedicated relationship manager — why businesses choose Anuradha Business Solutions.",
   alternates: { canonical: "/why-choose-us" },
 };
 
@@ -46,7 +46,7 @@ export default function WhyChooseUsPage() {
           <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Why Choose Us" }]} />
           <SectionHeading
             eyebrow="Why Choose Us"
-            title="What sets BusinessMitra apart from typical CA and law firms"
+            title="What sets Anuradha Business Solutions apart from typical CA and law firms"
             description="We built our delivery model around the one thing most consultancies get wrong: coordination. Here's how that plays out for you."
             light
           />

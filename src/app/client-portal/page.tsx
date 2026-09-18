@@ -6,7 +6,7 @@ import { LeadForm } from "@/components/ui/lead-form";
 export const metadata: Metadata = {
   title: "Client Portal (Preview)",
   description:
-    "A preview of the upcoming BusinessMitra India client portal — document upload, compliance tracker, application status, renewal alerts, invoices and support tickets in one dashboard.",
+    "A preview of the upcoming Anuradha Business Solutions client portal — document upload, compliance tracker, application status, renewal alerts, invoices and support tickets in one dashboard.",
   alternates: { canonical: "/client-portal" },
 };
 
@@ -53,7 +53,7 @@ export default function ClientPortalPage() {
             Coming Soon — Preview
           </span>
           <SectionHeading
-            title="One dashboard for every engagement with BusinessMitra"
+            title="One dashboard for every engagement with Anuradha Business Solutions"
             description="We're building a client portal so you can track documents, compliance deadlines, applications, renewals, invoices and support in one place. Here's a preview of what's coming."
             light
           />
@@ -91,7 +91,7 @@ export default function ClientPortalPage() {
           <div className="lg:col-span-3">
             <LeadForm
               title="Request Early Access"
-              whatsappIntro="Hi BusinessMitra, I'd like early access to the Client Portal."
+              whatsappIntro="Hi Anuradha Business Solutions, I'd like early access to the Client Portal."
               submitLabel="Request Early Access"
               fields={[
                 { name: "name", label: "Full Name", required: true },
