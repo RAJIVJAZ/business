@@ -18,11 +18,11 @@ export const site = {
   email: "consult@anuradhabusinesssolutions.com",
   supportEmail: "support@anuradhabusinesssolutions.com",
   address: {
-    line1: "9th Floor, Anuradha Corporate Towers",
-    line2: "Cyber City, Sector 24",
-    city: "Gurugram",
-    state: "Haryana",
-    pincode: "122002",
+    line1: "2nd Floor, Anuradha Business Centre",
+    line2: "Civil Lines",
+    city: "Prayagraj",
+    state: "Uttar Pradesh",
+    pincode: "211001",
     country: "India",
   },
   mapEmbedSrc:
@@ -36,7 +36,7 @@ export const site = {
   },
   stats: [
     { value: "12,000+", label: "Businesses Served" },
-    { value: "28", label: "States Covered" },
+    { value: "Top Rated", label: "Business Solutions Provider in Prayagraj" },
     { value: "₹840 Cr+", label: "Loans & Subsidies Facilitated" },
     { value: "9.2 yrs", label: "Avg. Team Experience" },
   ],

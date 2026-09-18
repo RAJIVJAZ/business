@@ -7,7 +7,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Anuradha Business Solutions's mission, vision, values and leadership — a one-stop business consultancy platform built to make compliance and growth simple for Indian businesses.",
+    "Anuradha Business Solutions's mission, vision, values and leadership — Prayagraj's one-stop business consultancy platform built to make compliance and growth simple for local businesses.",
   alternates: { canonical: "/about" },
 };
 
@@ -15,7 +15,7 @@ const values = [
   { title: "Transparency", desc: "Upfront pricing and honest timelines — no hidden charges, no false promises on approval odds." },
   { title: "Accountability", desc: "A dedicated relationship manager owns your engagement end-to-end, not a rotating pool of juniors." },
   { title: "Technical Rigor", desc: "Every DPR, filing and application is built to the specific bank/scheme/regulator's actual requirements." },
-  { title: "Pan-India Reach", desc: "In-house consultants plus a vetted regional associate network for state-specific liaison." },
+  { title: "Prayagraj Rooted", desc: "In-house consultants based in Prayagraj with deep, on-the-ground knowledge of Uttar Pradesh's licensing, subsidy and compliance landscape." },
 ];
 
 const leadership = [
@@ -52,16 +52,16 @@ export default function AboutPage() {
           <div className="rounded-2xl border border-border bg-white p-6">
             <h2 className="text-lg font-bold text-navy">Vision</h2>
             <p className="mt-3 text-sm leading-relaxed text-slate-600">
-              To become India&apos;s most trusted business growth and compliance partner — recognized in every
-              state for the depth of our sector expertise and consistency of delivery.
+              To become Prayagraj&apos;s most trusted business growth and compliance partner — recognized across
+              Uttar Pradesh for the depth of our sector expertise and consistency of delivery.
             </p>
           </div>
           <div className="rounded-2xl border border-border bg-white p-6">
             <h2 className="text-lg font-bold text-navy">Our Story</h2>
             <p className="mt-3 text-sm leading-relaxed text-slate-600">
               What started as a two-person CA and legal advisory in {site.founded} has grown into a
-              multi-disciplinary consultancy serving 12,000+ businesses across 28 states, spanning tax,
-              legal, licensing, subsidy, loan and specialized industry consultancy.
+              multi-disciplinary consultancy serving 12,000+ businesses across Prayagraj and Uttar Pradesh,
+              spanning tax, legal, licensing, subsidy, loan and specialized industry consultancy.
             </p>
           </div>
         </div>

@@ -7,7 +7,7 @@ import { site, whatsappLink } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Book a free consultation, request a callback, or reach Anuradha Business Solutions via phone, email or WhatsApp. Offices coordinating clients across 28 states.",
+    "Book a free consultation, request a callback, or reach Anuradha Business Solutions via phone, email or WhatsApp. Based in Prayagraj, serving clients across Uttar Pradesh.",
   alternates: { canonical: "/contact" },
 };
 

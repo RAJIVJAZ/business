@@ -21,8 +21,8 @@ const reasons = [
     desc: "Chartered accountants, corporate lawyers, ex-bankers and industry-specific technical consultants under one roof.",
   },
   {
-    title: "Pan-India Reach",
-    desc: "In-house consultants plus a vetted regional associate network covering 28 states for state-specific liaison and approvals.",
+    title: "Prayagraj Rooted",
+    desc: "In-house consultants based in Prayagraj with deep, on-the-ground knowledge of Uttar Pradesh's licensing, subsidy and compliance landscape.",
   },
   {
     title: "Technology Enabled",

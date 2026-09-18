@@ -7,9 +7,9 @@ export const generalFaqs: Faq[] = [
       "We provide end-to-end business consultancy across legal registration, GST & taxation, licenses and government approvals, MSME subsidies, bank loan facilitation, project reports, hospital and industrial consultancy, tender consultancy, trademark & IP, compliance management, and virtual legal officer services.",
   },
   {
-    question: "Do you operate across all of India?",
+    question: "Are you based in Prayagraj, or do you serve other cities too?",
     answer:
-      "Yes, we serve clients across 28 states through a combination of in-house consultants and a vetted network of regional associates for state-specific approvals and liaison.",
+      "We're based in Prayagraj and are one of the top business solutions providers in the city, with deep, on-the-ground knowledge of Uttar Pradesh's licensing, subsidy and compliance landscape. We also serve clients elsewhere in Uttar Pradesh through the same in-house team.",
   },
   {
     question: "How does pricing work?",
