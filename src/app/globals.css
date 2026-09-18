@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+:root {
+  --color-navy: #0b1f3a;
+  --color-navy-light: #14315c;
+  --color-blue: #1f5eff;
+  --color-blue-light: #4c7fff;
+  --color-blue-dark: #1745bf;
+  --color-green: #00b894;
+  --color-green-dark: #00997c;
+  --color-bg: #f8fafc;
+  --color-text: #1e293b;
+  --color-white: #ffffff;
+  --color-border: #e2e8f0;
+
+  --background: var(--color-bg);
+  --foreground: var(--color-text);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-navy: var(--color-navy);
+  --color-navy-light: var(--color-navy-light);
+  --color-blue: var(--color-blue);
+  --color-blue-light: var(--color-blue-light);
+  --color-blue-dark: var(--color-blue-dark);
+  --color-green: var(--color-green);
+  --color-green-dark: var(--color-green-dark);
+  --color-bg: var(--color-bg);
+  --color-border: var(--color-border);
+
+  --font-heading: var(--font-poppins);
+  --font-sans: var(--font-inter);
+
+  --animate-fade-up: fade-up 0.6s ease-out forwards;
+  --animate-count-up: count-up 0.8s ease-out forwards;
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes count-up {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-heading);
+}
+
+::selection {
+  background: var(--color-blue);
+  color: var(--color-white);
+}
+
+.container-site {
+  width: 100%;
+  max-width: 80rem;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .container-site {
+    padding-inline: 2rem;
+  }
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.bg-grid-pattern {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
