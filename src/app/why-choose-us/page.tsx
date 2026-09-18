@@ -2,12 +2,14 @@ import type { Metadata } from "next";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { CtaSection } from "@/components/ui/cta-section";
+import { AnimatedStat } from "@/components/ui/animated-stat";
+import { Reveal } from "@/components/ui/reveal";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Why Choose Us",
   description:
-    "One-stop solution, expert team, pan-India reach, technology-enabled delivery, transparent pricing and a dedicated relationship manager — why businesses choose Anuradha Business Solutions.",
+    "One-stop solution, expert team, Prayagraj-rooted expertise, technology-enabled delivery, transparent pricing and a dedicated relationship manager — why businesses choose Anuradha Business Solutions.",
   alternates: { canonical: "/why-choose-us" },
 };
 
@@ -56,13 +58,13 @@ export default function WhyChooseUsPage() {
       <section className="py-16 sm:py-24">
         <div className="container-site grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {reasons.map((reason, index) => (
-            <div key={reason.title} className="rounded-2xl border border-border bg-white p-6">
+            <Reveal key={reason.title} delay={Math.min(index, 5) * 0.06} className="rounded-2xl border border-border bg-white p-6">
               <span className="flex h-10 w-10 items-center justify-center rounded-full bg-green/10 font-bold text-green-dark">
                 {String(index + 1).padStart(2, "0")}
               </span>
               <h3 className="mt-4 font-bold text-navy">{reason.title}</h3>
               <p className="mt-2 text-sm text-slate-600">{reason.desc}</p>
-            </div>
+            </Reveal>
           ))}
         </div>
       </section>
@@ -70,14 +72,11 @@ export default function WhyChooseUsPage() {
       <section className="bg-white py-16 sm:py-24">
         <div className="container-site">
           <SectionHeading eyebrow="By The Numbers" title="Results our clients can point to" align="center" />
-          <div className="mt-10 grid grid-cols-2 gap-8 rounded-2xl bg-navy py-10 sm:grid-cols-4">
+          <Reveal className="mt-10 grid grid-cols-2 gap-8 rounded-2xl bg-navy py-10 sm:grid-cols-4">
             {site.stats.map((stat) => (
-              <div key={stat.label} className="text-center">
-                <div className="text-3xl font-bold text-white sm:text-4xl">{stat.value}</div>
-                <div className="mt-1 text-sm text-white/60">{stat.label}</div>
-              </div>
+              <AnimatedStat key={stat.label} value={stat.value} label={stat.label} />
             ))}
-          </div>
+          </Reveal>
         </div>
       </section>
 

@@ -72,6 +72,9 @@ Business API, and AI chatbot integration plan for Phase 2.
   messaging framework, brand personality blend, customer emotion mapping.
 - [`docs/sitemap-architecture.md`](docs/sitemap-architecture.md) — full sitemap, brief-vs-built
   Level 1/2 mapping, consolidation-vs-fragmentation rationale, gap closures.
+- [`docs/government-schemes-sources.md`](docs/government-schemes-sources.md) — what's independently
+  verified vs. general knowledge behind the `/government-schemes` page, and what's deliberately not
+  fabricated (there's no official "number of subsidies released" metric).
 - [`docs/architecture.md`](docs/architecture.md) — technical architecture (current + Phase 2 client
   portal/CRM/API), security architecture, future scaling roadmap.
 - [`docs/database-schema.md`](docs/database-schema.md) — proposed Phase 2 database schema for the

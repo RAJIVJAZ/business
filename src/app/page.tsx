@@ -2,12 +2,13 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { ButtonLink } from "@/components/ui/button-link";
 import { SectionHeading } from "@/components/ui/section-heading";
-import { StatCounter } from "@/components/ui/stat-counter";
+import { AnimatedStat } from "@/components/ui/animated-stat";
 import { TrustBar } from "@/components/ui/trust-bar";
 import { ServiceCard } from "@/components/ui/service-card";
 import { IndustryCard } from "@/components/ui/industry-card";
 import { TestimonialCard } from "@/components/ui/testimonial-card";
 import { CtaSection } from "@/components/ui/cta-section";
+import { Reveal } from "@/components/ui/reveal";
 import { services } from "@/data/services";
 import { industries } from "@/data/industries";
 import { testimonials } from "@/data/testimonials";
@@ -39,7 +40,7 @@ export default function HomePage() {
         <div className="bg-grid-pattern absolute inset-0 opacity-30" />
         <div className="container-site relative">
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:items-center">
-            <div className="lg:col-span-7">
+            <Reveal className="lg:col-span-7" y={16}>
               <span className="inline-block rounded-full bg-white/10 px-4 py-1 text-xs font-semibold uppercase tracking-wider text-green">
                 {site.tagline}
               </span>
@@ -56,11 +57,11 @@ export default function HomePage() {
               </div>
               <div className="mt-12 grid grid-cols-2 gap-6 sm:grid-cols-4">
                 {site.stats.map((stat) => (
-                  <StatCounter key={stat.label} value={stat.value} label={stat.label} />
+                  <AnimatedStat key={stat.label} value={stat.value} label={stat.label} />
                 ))}
               </div>
-            </div>
-            <div className="lg:col-span-5">
+            </Reveal>
+            <Reveal className="lg:col-span-5" delay={0.15} y={16}>
               <div className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm sm:p-8">
                 <h2 className="text-lg font-bold text-white">Not sure where to start?</h2>
                 <p className="mt-2 text-sm text-white/60">
@@ -85,7 +86,7 @@ export default function HomePage() {
                   Book Free Consultation
                 </ButtonLink>
               </div>
-            </div>
+            </Reveal>
           </div>
         </div>
       </section>
@@ -101,8 +102,10 @@ export default function HomePage() {
             description="Twelve core service lines covering the full lifecycle — from incorporation to ongoing compliance to specialized industry consultancy."
           />
           <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {featuredServices.map((service) => (
-              <ServiceCard key={service.slug} service={service} />
+            {featuredServices.map((service, index) => (
+              <Reveal key={service.slug} delay={Math.min(index, 5) * 0.06}>
+                <ServiceCard service={service} />
+              </Reveal>
             ))}
           </div>
           <div className="mt-10 text-center">
@@ -120,9 +123,9 @@ export default function HomePage() {
             description="Check your subsidy eligibility or estimate your loan EMI in under two minutes."
           />
           <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
-            {flagshipSolutions.map((item) => (
+            {flagshipSolutions.map((item, index) => (
+              <Reveal key={item.href} delay={index * 0.08}>
               <Link
-                key={item.href}
                 href={item.href}
                 className="group relative overflow-hidden rounded-2xl border border-border bg-bg p-8 transition-all hover:-translate-y-1 hover:shadow-xl"
               >
@@ -138,6 +141,7 @@ export default function HomePage() {
                   </svg>
                 </span>
               </Link>
+              </Reveal>
             ))}
           </div>
         </div>
@@ -152,8 +156,10 @@ export default function HomePage() {
             description="From food processing units to hospitals to warehousing businesses, our team understands sector-specific regulation."
           />
           <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {industries.slice(0, 4).map((industry) => (
-              <IndustryCard key={industry.slug} industry={industry} />
+            {industries.slice(0, 4).map((industry, index) => (
+              <Reveal key={industry.slug} delay={index * 0.06}>
+                <IndustryCard industry={industry} />
+              </Reveal>
             ))}
           </div>
           <div className="mt-10 text-center">
@@ -171,8 +177,10 @@ export default function HomePage() {
             align="center"
           />
           <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {testimonials.slice(0, 3).map((t) => (
-              <TestimonialCard key={t.name} testimonial={t} />
+            {testimonials.slice(0, 3).map((t, index) => (
+              <Reveal key={t.name} delay={index * 0.08}>
+                <TestimonialCard testimonial={t} />
+              </Reveal>
             ))}
           </div>
         </div>
@@ -186,19 +194,20 @@ export default function HomePage() {
             <ButtonLink href="/blog" variant="ghost">Visit Blog</ButtonLink>
           </div>
           <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-3">
-            {latestPosts.map((post) => (
-              <Link
-                key={post.slug}
-                href={`/blog/${post.slug}`}
-                className="group rounded-2xl border border-border bg-white p-6 transition-all hover:-translate-y-1 hover:shadow-xl"
-              >
-                <span className="inline-block rounded-full bg-navy/5 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-navy/60">
-                  {post.category}
-                </span>
-                <h3 className="mt-3 text-base font-bold text-navy group-hover:text-blue">{post.title}</h3>
-                <p className="mt-2 text-sm text-slate-600">{post.excerpt}</p>
-                <span className="mt-3 block text-xs text-slate-400">{post.readTime}</span>
-              </Link>
+            {latestPosts.map((post, index) => (
+              <Reveal key={post.slug} delay={index * 0.08}>
+                <Link
+                  href={`/blog/${post.slug}`}
+                  className="group block rounded-2xl border border-border bg-white p-6 transition-all hover:-translate-y-1 hover:shadow-xl"
+                >
+                  <span className="inline-block rounded-full bg-navy/5 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-navy/60">
+                    {post.category}
+                  </span>
+                  <h3 className="mt-3 text-base font-bold text-navy group-hover:text-blue">{post.title}</h3>
+                  <p className="mt-2 text-sm text-slate-600">{post.excerpt}</p>
+                  <span className="mt-3 block text-xs text-slate-400">{post.readTime}</span>
+                </Link>
+              </Reveal>
             ))}
           </div>
         </div>

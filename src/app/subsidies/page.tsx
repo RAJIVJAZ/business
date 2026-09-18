@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { SubsidyChecker } from "@/components/ui/subsidy-checker";
@@ -72,6 +73,11 @@ export default function SubsidiesPage() {
                 </ul>
               </div>
             ))}
+          </div>
+          <div className="mt-8 text-center">
+            <Link href="/government-schemes" className="text-sm font-semibold text-blue hover:underline">
+              See real state-by-state subsidy rates and women entrepreneur schemes →
+            </Link>
           </div>
         </div>
       </section>

@@ -1,0 +1,31 @@
+"use client";
+
+import { motion } from "framer-motion";
+import type { ReactNode } from "react";
+
+// Scroll-triggered fade/slide-up wrapper used across the site for a
+// consistent "reveal" feel. `once: true` keeps it a one-time entrance
+// animation rather than something that re-triggers on every scroll pass.
+export function Reveal({
+  children,
+  delay = 0,
+  className = "",
+  y = 24,
+}: {
+  children: ReactNode;
+  delay?: number;
+  className?: string;
+  y?: number;
+}) {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-80px" }}
+      transition={{ duration: 0.6, ease: "easeOut", delay }}
+      className={className}
+    >
+      {children}
+    </motion.div>
+  );
+}

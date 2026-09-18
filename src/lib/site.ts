@@ -82,6 +82,7 @@ export const primaryNav: NavItem[] = [
       { label: "Loan Assistance", href: "/loans", description: "Eligibility calculator" },
       { label: "Hospital Consultancy", href: "/hospital-consultancy", description: "Setup to accreditation" },
       { label: "Manufacturing Consultancy", href: "/manufacturing-consultancy", description: "Factory to compliance" },
+      { label: "Government Schemes Explorer", href: "/government-schemes", description: "Central, state & women entrepreneur schemes" },
     ],
   },
   { label: "Industries", href: "/industries" },

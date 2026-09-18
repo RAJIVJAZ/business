@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/services",
     "/subsidies",
     "/loans",
+    "/government-schemes",
     "/hospital-consultancy",
     "/manufacturing-consultancy",
     "/industries",
