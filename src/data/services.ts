@@ -351,6 +351,62 @@ export const services: Service[] = [
     ],
     keywords: ["virtual legal officer", "outsourced general counsel India", "legal retainer consultant"],
   },
+  {
+    slug: "iso-certification",
+    title: "ISO Certification Consultancy",
+    shortTitle: "ISO Certification",
+    category: "Tax & Compliance",
+    summary: "ISO 9001, 14001, 22000 and 45001 certification — documentation, gap assessment and audit readiness handled end-to-end.",
+    overview: [
+      "ISO certification is increasingly a prerequisite for government tenders, institutional buyers and export contracts, not just a quality-management nicety. Most rejections at the certifying body stage come from documentation gaps, not actual process failures — which is exactly what a properly run certification consultancy prevents.",
+      "We assess your current processes against the target standard (9001 Quality, 14001 Environmental, 22000 Food Safety, 45001 Occupational Health & Safety), build the required documentation, and prepare your team for the certifying body's audit.",
+    ],
+    process: [
+      { step: "Gap Assessment", description: "Current processes benchmarked against the target ISO standard's clauses." },
+      { step: "Documentation", description: "Quality manual, SOPs, records and forms built to the standard's exact requirements." },
+      { step: "Internal Audit & Training", description: "Staff trained and an internal audit run before the external certifying body is engaged." },
+      { step: "Certification Audit Support", description: "Coordination with the certifying body through Stage 1 and Stage 2 audits to certificate issuance." },
+    ],
+    benefits: [
+      "Standard-specific documentation, not a generic template pack",
+      "Internal audit and staff training before the real audit, reducing non-conformance risk",
+      "Certifying body coordination handled on your behalf",
+      "Renewal and surveillance-audit tracking once certified",
+    ],
+    faqs: [
+      { question: "Which ISO standard does my business need?", answer: "ISO 9001 (Quality Management) suits most businesses generally; food processors typically need ISO 22000 in addition, manufacturers with environmental exposure benefit from 14001, and any business with a factory floor should consider 45001 for occupational safety. We assess your specific sector before recommending." },
+      { question: "How long does ISO certification take?", answer: "Typically 6-10 weeks from gap assessment to certificate issuance, depending on how much documentation and process change is required and the certifying body's audit scheduling." },
+    ],
+    keywords: ["ISO certification consultant", "ISO 9001 consultant India", "ISO 22000 consultant"],
+  },
+  {
+    slug: "virtual-cfo",
+    title: "Virtual CFO Services",
+    shortTitle: "Virtual CFO",
+    category: "Growth & Finance",
+    summary: "Outsourced CFO-level financial strategy, MIS reporting and fundraising support for businesses not yet ready for a full-time CFO.",
+    overview: [
+      "Growing businesses need CFO-level financial discipline — cash flow forecasting, MIS reporting, investor-ready financials, banking relationship management — well before they can justify a full-time CFO's cost. Our Virtual CFO service fills that gap on a monthly retainer, alongside the Virtual Legal Officer practice for businesses needing both.",
+      "A dedicated finance professional works with your existing accounting team (or ours, if you don't have one) to build monthly MIS packs, manage banking and lender relationships, and prepare fundraising or loan documentation when the business is ready to scale.",
+    ],
+    process: [
+      { step: "Financial Health Check", description: "Review of current books, MIS practices and banking relationships." },
+      { step: "MIS & Reporting Setup", description: "Monthly MIS pack, cash flow forecast and budget-vs-actual tracking established." },
+      { step: "Ongoing CFO Support", description: "Monthly review calls, banking/lender liaison and board-ready financial reporting." },
+      { step: "Fundraising / Loan Readiness", description: "Investor-grade financials and projections prepared when the business is raising capital or debt." },
+    ],
+    benefits: [
+      "CFO-level financial discipline at a fraction of a full-time hire's cost",
+      "Investor and lender-ready financials whenever the business needs to raise",
+      "Direct coordination with our Loan Facilitation and Subsidy Consultancy practices",
+      "Monthly MIS pack that turns bookkeeping into decision-useful reporting",
+    ],
+    faqs: [
+      { question: "How is Virtual CFO different from a regular accountant or CA?", answer: "A CA focuses on statutory compliance and tax filing; a Virtual CFO focuses on forward-looking financial strategy — cash flow forecasting, fundraising readiness, banking relationships and MIS reporting for decision-making. Many clients use both together." },
+      { question: "Can the Virtual CFO help with raising a bank loan or investor round?", answer: "Yes — the Virtual CFO retainer coordinates directly with our Loan Facilitation team on bank financing, and prepares investor-grade financials and projections for equity fundraising." },
+    ],
+    keywords: ["virtual CFO services India", "outsourced CFO consultant", "fractional CFO India"],
+  },
 ];
 
 export function getServiceBySlug(slug: string) {

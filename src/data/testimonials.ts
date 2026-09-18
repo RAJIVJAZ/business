@@ -12,7 +12,7 @@ export const testimonials: Testimonial[] = [
     role: "Founder",
     company: "Verma Foods Pvt Ltd",
     quote:
-      "Anuradha Business Solutions's team structured our PMFME subsidy application and DPR so well that our sanction came through in one committee cycle. Their follow-up through disbursement was the real difference.",
+      "Anuradha Business Solutions' team structured our PMFME subsidy application and DPR so well that our sanction came through in one committee cycle. Their follow-up through disbursement was the real difference.",
     industry: "Food Processing",
   },
   {

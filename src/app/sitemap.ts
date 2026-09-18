@@ -3,6 +3,7 @@ import { site } from "@/lib/site";
 import { services } from "@/data/services";
 import { industries } from "@/data/industries";
 import { blogPosts } from "@/data/blog";
+import { caseStudies } from "@/data/case-studies";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = [
@@ -15,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/hospital-consultancy",
     "/manufacturing-consultancy",
     "/industries",
+    "/case-studies",
     "/blog",
     "/client-portal",
     "/contact",
@@ -48,5 +50,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.5,
   }));
 
-  return [...staticRoutes, ...serviceRoutes, ...industryRoutes, ...blogRoutes];
+  const caseStudyRoutes = caseStudies.map((caseStudy) => ({
+    url: `${site.url}/case-studies/${caseStudy.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+  }));
+
+  return [...staticRoutes, ...serviceRoutes, ...industryRoutes, ...caseStudyRoutes, ...blogRoutes];
 }
