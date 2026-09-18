@@ -54,6 +54,13 @@ export default function HomePage() {
                 <ButtonLink href={site.ctaPrimary.href} size="lg">{site.ctaPrimary.label}</ButtonLink>
                 <ButtonLink href={site.ctaSecondary.href} variant="outline" size="lg">{site.ctaSecondary.label}</ButtonLink>
               </div>
+              <div className="mt-8 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2">
+                <svg className="h-4 w-4 shrink-0 text-green" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 1.5l2.6 5.27 5.82.85-4.21 4.1.99 5.79L10 14.9l-5.2 2.61.99-5.79-4.21-4.1 5.82-.85L10 1.5z" />
+                </svg>
+                <span className="text-sm font-semibold text-white">Top Rated</span>
+                <span className="text-sm text-white/60">— Business Solutions Provider in Prayagraj</span>
+              </div>
             </Reveal>
             <Reveal className="lg:col-span-5" delay={0.15} y={16}>
               <div className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm sm:p-8">
